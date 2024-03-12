@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="/photoswipe.css"/>
+    <title>PhotoSwipe demo</title>
+</head>
+<body>
+<div class="pswp-gallery" id="my-gallery">
+    <h2>Set 1</h2>
+    <a
+            href="https://unsplash.it/1200/900/?image=552"
+            data-pswp-width="1200"
+            data-pswp-height="900"
+            target="_blank"
+    >
+        <img class="w-full" src="https://unsplash.it/400/300/?image=552" alt=""/>
+    </a>
+    <a
+            href="https://unsplash.it/1200/900/?image=553"
+            data-pswp-width="1200"
+            data-pswp-height="900"
+    >
+        <img class="w-full"
+             src="https://unsplash.it/400/300/?image=553"
+             alt=""
+        />
+    </a>
+    <a
+            href="https://unsplash.it/1200/900/?image=554"
+            data-pswp-width="1200"
+            data-pswp-height="900"
+            target="_blank"
+    >
+        <img class="w-full"
+             src="https://unsplash.it/400/300/?image=554"
+             alt=""
+        />
+    </a>
+    <a
+            href="https://unsplash.it/1200/900/?image=555"
+            data-pswp-width="1200"
+            data-pswp-height="900"
+            target="_blank"
+    >
+        <img class="w-full" src="https://unsplash.it/400/300/?image=555" alt=""/>
+    </a>
+    <h2>Set 2</h2>
+    <a
+            href="https://unsplash.it/1200/900/?image=556"
+            data-pswp-width="1200"
+            data-pswp-height="900"
+    >
+        <img class="w-full"
+             src="https://unsplash.it/400/300/?image=556"
+             alt=""
+        />
+    </a>
+    <a
+            href="https://unsplash.it/1200/900/?image=557"
+            data-pswp-width="1200"
+            data-pswp-height="900"
+            target="_blank"
+    >
+        <img class="w-full"
+             src="https://unsplash.it/400/300/?image=557"
+             alt=""
+        />
+    </a>
+    <a
+            href="https://unsplash.it/1200/900/?image=558"
+            data-pswp-width="1200"
+            data-pswp-height="900"
+            target="_blank"
+    >
+        <img class="w-full"
+             src="https://unsplash.it/400/300/?image=558"
+             alt=""
+        />
+    </a>
+    <a
+            href="https://unsplash.it/1200/900/?image=559"
+            data-pswp-width="1200"
+            data-pswp-height="900"
+            target="_blank"
+    >
+        <img class="w-full"
+             src="https://unsplash.it/400/300/?image=559"
+             alt=""
+        />
+    </a>
+    <a
+            href="https://unsplash.it/1200/900/?image=560"
+            data-pswp-width="1200"
+            data-pswp-height="900"
+            target="_blank"
+    >
+        <img class="w-full"
+             src="https://unsplash.it/400/300/?image=560"
+             alt=""
+        />
+    </a>
+</div>
+<script type="module">
+    import PhotoSwipeLightbox from '/photoswipe-lightbox.esm.min.js';
+    import PhotoSwipe from '/photoswipe.esm.min.js';
+
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#my-gallery',
+        children: 'a',
+        pswpModule: PhotoSwipe,
+    });
+
+    lightbox.init();
+</script>
+</body>
+</html>
